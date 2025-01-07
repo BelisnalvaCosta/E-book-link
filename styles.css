@@ -1,57 +1,119 @@
+/* Estilos Gerais  - ORIGINAL - PRIMEIRO ok */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-  }
+}
   
-  header {
+  /* Cabeçalho */
+header {
     text-align: center;
     background: #00509E;
     color: #fff;
     padding: 20px 10px;
-  }
+}
   
-  nav ul {
+  /* Navegação */
+nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     background: #333;
     margin: 0;
     padding: 10px;
-  }
+}
   
-  nav ul li {
+nav ul li {
     margin: 0 10px;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
+    font-size: 1rem;
+}
   
-  main {
+/* Conteúdo  - original 
+main {
     padding: 20px;
-  }
+}
   
-  section {
+section {
     margin-bottom: 30px;
-  }
+}
+*/
 
-  img-capa {
-    max-width: 100%;
-    height: auto;
+/* novo tópicos scroll e transvessal*/
+ /* Conteúdo Principal */
+ main {
+    margin-left: 10%;
+    padding: 120px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
+  .topic {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
-  footer {
+  .topic img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .topic div {
+    flex: 1;
+  }
+  
+  .topic.invert {
+    flex-direction:row ;
+    /*row-reverse;*/
+}  
+ 
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  /* Rodapé */
+footer {
     text-align: center;
     background: #00509E;
     color: #fff;
     padding: 10px 0;
-  }
+}
   
+  /* Botões de Navegação */
+button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00509E;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+  
+#prev-btn {
+    left: 10px;
+}
+  
+#next-btn {
+    right: 10px;
+}
+  
+button:hover {
+    background: #00376D;
+}
